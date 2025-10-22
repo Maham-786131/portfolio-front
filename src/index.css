@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary: #477FF7;
+  --accent: #6A5AF9;
+  --glass-light: rgba(255,255,255,0.66);
+  --glass-dark: rgba(10,12,20,0.46);
+}
+
+html,body,#root{height:100%}
+body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+
+/* glass card */
+.glass {
+  background: linear-gradient(135deg, rgba(255,255,255,0.55), rgba(255,255,255,0.25));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 6px 30px rgba(71,127,247,0.06);
+}
+
+.dark .glass {
+  background: linear-gradient(180deg, rgba(18,22,28,0.44), rgba(9,11,15,0.34));
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 8px 36px rgba(6,10,20,0.6);
+}
+
+/* colorful gradient blob backgrounds */
+.blob {
+  position: absolute;
+  filter: blur(60px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+/* 3D tilt helper (used by Projects) */
+.tilt {
+  transform-style: preserve-3d;
+  transition: transform 300ms cubic-bezier(.2,.9,.3,1), box-shadow 300ms;
+}
+.tilt:hover { box-shadow: 0 18px 50px rgba(16,24,40,0.28); transform: translateY(-6px) rotateX(6deg) rotateY(-6deg)}
+
+/* Typewriter caret */
+.typewriter { white-space: nowrap; overflow: hidden; display:inline-block; }
+.caret { display:inline-block; width:2px; height:1em; background:var(--primary); margin-left:6px; animation: blink 1s steps(2) infinite; vertical-align:bottom}
+@keyframes blink { 0%,50%{opacity:1} 51%,100%{opacity:0} }
+
+/* small util */
+.card { @apply rounded-2xl overflow-hidden shadow-lg bg-white dark:bg-[#071022]; }
