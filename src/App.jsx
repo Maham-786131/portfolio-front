@@ -5,7 +5,11 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Project'
 import Contact from './components/Contact'
+import Skills from "./components/Skills";
+import Testimonials from "./components/Testimonials";
+import Journey from "./components/Journey";
 import Footer from './components/Footer'
+import CTA from './components/CTA';
 
 export default function App(){
   return (
@@ -13,8 +17,12 @@ export default function App(){
       <Navbar />
       <main className="max-w-6xl mx-auto px-5 py-12 space-y-20">
         <Hero />
+        <Skills />
+        <CTA/>
         <About />
         <Projects />
+        <Testimonials />
+        <Journey />
         <Contact />
       </main>
       <Footer />

@@ -1,10 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-
+import homepageImg from '../assets/images/homepage-seen-computer-screen.jpg';
+import stockMarketImg from '../assets/images/stock-market-investment-finance-concept.jpg';
+import elearningImg from '../assets/images/man-taking-e-leraning-courses.jpg';
 const projects = [
-  { title:'Ace of Cuts', img:'/images/homepage-seen-computer-screen.jpg', tags:['React','UI'], live:'#', repo:'#' },
-  { title:'Travel Hero', img:'/images/stock-market-investment-finance-concept.jpg', tags:['Landing','Tailwind'], live:'#', repo:'#' },
-  { title:'Nature Gallery', img:'/images/man-taking-e-leraning-courses.jpg', tags:['Photography'], live:'#', repo:'#' },
+  { title:'Ace of Cuts', img: homepageImg, tags:['React','UI'], live:'#', repo:'#' },
+  { title:'Travel Hero', img: stockMarketImg, tags:['Landing','Tailwind'], live:'#', repo:'#' },
+  { title:'Nature Gallery', img: elearningImg, tags:['Photography'], live:'#', repo:'#' },
 ]
 
 export default function Projects(){

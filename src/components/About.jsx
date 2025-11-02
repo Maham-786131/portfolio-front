@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import about from '../assets/images/Contact Us.png';
 
 export default function About(){
   return (
@@ -8,7 +9,7 @@ export default function About(){
         <div className="relative">
           {/* <div className="absolute -left-6 -top-6 w-44 h-44 bg-gradient-to-br from-primary to-accent rounded-2xl blur-3xl opacity-30"></div> */}
           <div className="card overflow-hidden">
-            <img src="/images/Contact Us.png" alt="me" className="w-full object-cover h-96"/>
+            <img src={about} alt="me" className="w-full object-cover h-96"/>
           </div>
         </div>
 

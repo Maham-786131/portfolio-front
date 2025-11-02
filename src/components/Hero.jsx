@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import homepageImg from '../assets/images/homepage-seen-computer-screen.jpg';
 
 function useTypewriter(words, speed = 110, pause = 1000){
   const [index, setIndex] = useState(0)
@@ -68,7 +69,7 @@ export default function Hero(){
 
           <div className="relative">
             <div className="card tilt p-3">
-              <img src="/images/homepage-seen-computer-screen.jpg" alt="project" className="w-full h-64 object-cover rounded-xl"/>
+              <img src={homepageImg} alt="project" className="w-full h-64 object-cover rounded-xl"/>
             </div>
             <div className="mt-3 flex gap-3">
               <div className="p-3 glass rounded-xl text-sm">React • Tailwind • Framer</div>
