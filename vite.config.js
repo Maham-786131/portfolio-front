@@ -6,5 +6,5 @@ import react from '@vitejs/plugin-react'
 // base: '/portfolio-front/',
 
    plugins: [react()],
-    base: '/testing/',
+    base: '/',
 })
